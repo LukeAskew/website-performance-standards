@@ -40,40 +40,59 @@ Page speed score | **75/100** | [&#9872;](#pagespeed)
 
 #### <a name="responsiveness">&#9992; Responsiveness</a> 
 
-TODO
+Use [webpagetest.org](http://www.webpagetest.org/).
 
 #### <a name="link">&#10697; Frames</a> 
 
-TODO 
+Use Chrome Dev Tools' [Frames Mode](http://blog.chromium.org/2012/11/build-smoother-web-apps-with-chrome.html) to measure frames per second.
+
+Any event that breaks through the 60fps threshold should be noted.
+
+<img src="http://i.imgur.com/x0t1jCG.png" alt="" />
 
 #### <a name="link">&#9872; Page Speed</a> 
 
-TODO 
-
+ Use [Google's PageSpeed Insights](http://developers.google.com/speed/pagespeed/insights/).
 
 ## Code Quality
 
-TODO: define code quality standards specific to performance.
-
-- Progressive JPGs
-- CSS
-    + Only CSS in head
-    + Inefficient selectors
-- JS
-    + ???
+- **CSS**
+    + Only in the `<head>`
+    + Avoid [inefficient selectors](https://github.com/resource/Front-End-Standards/blob/master/Stylesheets/CSS.md#efficiency)
+- **JS**
+    + Avoid binding window events (scroll, resize); [throttle](http://drupalmotion.com/article/debounce-and-throttle-visual-explanation) when you do.
+    + Load scripts at the bottom of the document, immediately before the closing `</body>`.
+    + Concatenate scripts when possible.
+- **HTML**
+    + Keep DOM [node depth](https://developer.mozilla.org/en-US/docs/Tools/3D_View) to a minimum
+- **Images**
+    + Appropriate format
+        * **PNG**: limited color complexity
+            - 8-bit standard; 24 bit for complex transparency
+        * **JPG**: tons of color (photographs)
+            - Must be [progressive](http://calendar.perfplanet.com/2012/progressive-jpegs-a-new-best-practice/)    
 
 
 ## Guidelines
 
-TODO: fill in each with a brief summary/guideline
-
-- [Google's web performance best practices](https://developers.google.com/speed/docs/best-practices/rules_intro)
-- [Designers](https://speakerdeck.com/lara/design-for-performance)
+- Google's [Web Performance Best Practices](https://developers.google.com/speed/docs/best-practices/rules_intro)
+- [Good performance is good design](http://laraswanson.com/design/). Designers and developers must collaborate in order to deliver performant websites.
+- Performance testing can be performed at any point in the project lifecycle. Some responsiveness KPIs can be verified before any code is written.
 
 ## Additional Resources
 
-TODO
+http://www.youtube.com/watch?v=z0_jD8nO5Zw
+http://jankfree.org/
+http://addyosmani.com/blog/performance-optimisation-with-timeline-profiles/
+http://moz.com/blog/how-website-speed-actually-impacts-search-ranking
 
+## Sources
 
+http://www.damcogroup.com/white-papers/ecommerce_website_perf_wp.pdf
+http://www.phocuswright.com/free_reports/consumer-response-to-travel-site-performance
+http://www.getelastic.com/ttfb-and-tti-2-kpis-more-important-than-page-load-speed/
+http://www.webperformancetoday.com/2013/10/15/new-findings-typical-leading-ecommerce-site-takes-5-3-seconds-to-become-interactive/
+http://blog.kissmetrics.com/loading-time/
+http://www.akamai.com/dl/reports/Site_Abandonment_Final_Report.pdf
 
 
