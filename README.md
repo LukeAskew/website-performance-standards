@@ -18,17 +18,17 @@ Browser | **Google Chrome**
 
 Metric | Standard | Methodology
 --- | --- | ---
-Time to first byte | **200ms** | [&#9992;](#responsiveness)
+Time to first byte | **250ms** | [&#9992;](#responsiveness)
 Load time | **2s** | [&#9992;](#responsiveness)
 Page size | **1333kb** (1.3mb) | [&#9992;](#responsiveness)
 Time to interact | **3s** | [&#9992;](#responsiveness)
 API response | **500ms** | [&#9992;](#responsiveness)
 Animation | **60fps** (16.6ms) | [&#10697;](#frames)
-Page speed score | **75/100** | [&#9872;](#pagespeed)
+Page speed score | **85/100** | [&#9872;](#pagespeed)
 
 ### Definitions
 
-- **Time to first byte:** (TTFB) The time from the start of the initial request until the first byte is received by the browser. 
+- **Time to first byte:** (TTFB) The time from the start of the initial request until the first byte is received by the browser. [More info](http://www.webpagetest.org/forums/showthread.php?tid=11441&pid=18155#pid18155)
 - **Load time:** The time from the start of the initial request until all the page's dependent assets have been loaded.
 - **Page size:** The amount of data transfered up until the page is considered "loaded". See [calculation methodology](http://www.dslreports.com/calculator?sz=1333+KB&time=2+s&c2=Calc&speed=5+Mbps)
 - **Time to interact**: (TTI) Time of the last visual change to the page; a cue to the user that the page is ready to be interacted with. Also known as "visually complete".
@@ -69,6 +69,8 @@ Any event that breaks through the 60fps threshold should be noted.
 - http://jankfree.org/
 - http://addyosmani.com/blog/performance-optimisation-with-timeline-profiles/
 - http://moz.com/blog/how-website-speed-actually-impacts-search-ranking
+- https://github.com/Snugug/north#performance
+- http://aerotwist.com/blog/dont-guess-it-test-it/
 
 ## Sources
 
