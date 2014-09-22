@@ -1,4 +1,4 @@
-# Resource Website Performance Standards
+# Resource/Ammirati Website Performance Standards
 
 This document provides [research-based](#sources) KPIs for measuring the performance of websites.
 
