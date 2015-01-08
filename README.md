@@ -1,8 +1,6 @@
-# Resource/Ammirati Website Performance Standards
+# Website Performance Standards
 
 This document provides [research-based](#sources) KPIs for measuring the performance of websites.
-
-**These are not recommendations**. The KPIs should be treated as <span style="color:green">pass</span>/<span style="color:red">fail</span>. Any failing KPI should be considered a *blocker* unless otherwise agreed upon by the project team.
 
 ## Metrics
 
